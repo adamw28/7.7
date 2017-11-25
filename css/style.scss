@@ -1,0 +1,39 @@
+body{
+	background-color:  #ffffff;
+	width: 1920px;
+	height: 4685px;
+	font-family:Lato;
+	text-transform: uppercase;
+}
+header{
+	display:flex;
+	justify-content: space-around;
+  	align-items: center;
+	flex-direction:column;
+	text-align: center;
+	width: 1920px;
+	height: 1072px;
+	color:#fff;
+	background:url("../images/header.jpg");
+	.ellipse{
+		width: 65px;
+		height: 69px;
+		margin-top:200px;
+	}
+	h1{
+		font-size: 53.9px;
+		font-weight: 700;
+		transform: scaleY(1.0018);
+		letter-spacing: 10px;
+	}
+	p{
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 29px;
+		text-align: center;
+	}
+	.shape{
+		width: 23px;
+		height: 37px;
+	}
+}

@@ -1,0 +1,36 @@
+body {
+  background-color: #ffffff;
+  width: 1920px;
+  height: 4685px;
+  font-family: Lato; }
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 1920px;
+  height: 1072px;
+  color: #fff;
+  text-transform: uppercase;
+  background: url("../images/header.jpg"); }
+  header .ellipse {
+    width: 65px;
+    height: 69px;
+    margin-top: 200px; }
+  header h1 {
+    font-size: 53.9px;
+    font-weight: 700;
+    transform: scaleY(1.0018);
+    letter-spacing: 10px; }
+  header p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center; }
+  header .shape {
+    width: 23px;
+    height: 37px; }
+
+/*# sourceMappingURL=style.css.map */
