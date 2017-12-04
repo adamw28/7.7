@@ -1,6 +1,6 @@
 body {
   background-color: #ffffff;
-  width: 100%;
+  width: 100vw;
   height: 4685px;
   font-family: Lato;
   display: flex;
@@ -73,32 +73,50 @@ header {
   width: 100%;
   height: 488px;
   background: url("../images/services.jpg") center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
-  .services h2 {
-    font-size: 33.93px;
-    font-weight: 700;
-    text-align: center;
-    transform: scaleY(1.002);
-    position: relative;
-    top: 30px;
-    display: inline-block;
-    width: 419px;
-    background: transparent; }
-  .services div {
-    border-width: 2px;
-    border-color: #ffffff;
-    border-style: solid;
+  padding: 5% 0px; }
+  .services .content {
     width: 895px;
-    height: 247px;
-    padding: 60px;
+    border: 2px solid #fff;
+    border-top: none;
     margin: 0 auto; }
-    .services div p {
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 25.89px; }
+    .services .content .headline {
+      position: relative;
+      transform: translate(0, -50%);
+      margin-left: -2px;
+      margin-right: -2px;
+      overflow: hidden;
+      display: flex;
+      align-items: center; }
+      .services .content .headline h2 {
+        margin: 0 auto;
+        font-size: 33.93px;
+        font-weight: 700;
+        transform: scaleY(1.002);
+        position: relative;
+        display: inline-block;
+        width: 419px;
+        background: transparent;
+        flex-grow: 0; }
+      .services .content .headline::before {
+        content: "";
+        background: #fff;
+        flex-grow: 1;
+        height: 2px; }
+      .services .content .headline::after {
+        content: "";
+        background: #fff;
+        flex-grow: 1;
+        height: 2px; }
+    .services .content .text {
+      border-top: none;
+      width: 895px;
+      height: 247px;
+      padding: 60px;
+      margin: 0 auto; }
+      .services .content .text p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 25.89px; }
 
 .whatwedo {
   width: 902px;
@@ -205,5 +223,47 @@ footer {
   color: #000; }
   footer p {
     display: inline-block; }
+
+.sservices {
+  width: 100%;
+  height: 488px;
+  color: #fff;
+  background: url("../images/services.jpg") center/cover no-repeat; }
+  .sservices .scontent {
+    width: 500px;
+    padding: 0 0px 40px 0px;
+    margin: 50px auto;
+    border: 2px solid #fff;
+    border-top: none; }
+    .sservices .scontent .content-headline {
+      position: relative;
+      transform: translate(0, -50%);
+      margin-left: -2px;
+      margin-right: -2px;
+      overflow: hidden;
+      display: flex;
+      align-items: center; }
+      .sservices .scontent .content-headline h2 {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+        display: inline-block;
+        flex-grow: 0;
+        padding: 0 30px; }
+      .sservices .scontent .content-headline::before {
+        content: "";
+        background: #fff;
+        flex-grow: 1;
+        height: 2px; }
+      .sservices .scontent .content-headline::after {
+        content: "";
+        background: #fff;
+        flex-grow: 1;
+        height: 2px; }
+    .sservices .scontent .content-text {
+      padding: 0 40px;
+      width: 895px;
+      height: 247px; }
 
 /*# sourceMappingURL=style.css.map */

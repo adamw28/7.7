@@ -1,6 +1,6 @@
 body{
 	background-color:  #ffffff;
-	width: 100%;
+	width: 100vw;
 	height: 4685px;
 	font-family:Lato;
 	display:flex;
@@ -81,25 +81,45 @@ header{
 	width: 100%;
 	height: 488px;
 	background:url("../images/services.jpg") center/cover no-repeat;
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	h2{
-		font-size: 33.93px;
-		font-weight: 700;
-		text-align: center;
-		transform: scaleY(1.002);
-		position:relative;
-		top:30px;
-		display: inline-block;
-		width:419px;
-		background: transparent;
+	padding: 5% 0px;
+	.content{
+		width: 895px;
+  		border: 2px solid #fff;
+  		border-top: none;
+  		margin:0 auto;
+	.headline{
+		position: relative;
+  		transform: translate(0, -50%);
+  		margin-left: -2px;
+  		margin-right: -2px;
+  		overflow: hidden;
+  		display: flex;
+  		align-items: center;
+		h2{margin:0 auto;
+			font-size: 33.93px;
+			font-weight: 700;
+			transform: scaleY(1.002);
+			position:relative;
+			display: inline-block;
+			width:419px;
+			background: transparent;
+			flex-grow: 0;
+		}
+		&::before{
+		content: "";
+  		background: #fff;
+  		flex-grow: 1;
+  		height: 2px;
+			}
+		&::after{
+		content: "";
+  		background: #fff;
+  		flex-grow: 1;
+  		height: 2px;
+			}
 	}
-	div{
-		border-width: 2px;
-		border-color:  #ffffff;
-		border-style: solid;
+	.text{
+		border-top:none;
 		width: 895px;
 		height: 247px;
 		padding:60px;
@@ -110,6 +130,7 @@ header{
 			line-height: 25.89px;
 		}
 	}
+}
 }
 .whatwedo{
 	width: 902px;
