@@ -55,7 +55,7 @@ header {
     display: inline-block;
     width: 500px; }
   .aboutus div {
-    border: 2px #fff solid;
+    border: 2px #3c3c3c solid;
     width: 898px;
     height: 308px;
     padding: 60px; }
@@ -73,8 +73,8 @@ header {
   background: url("../images/services.jpg") center/cover no-repeat;
   padding: 5% 0px; }
   .services .content {
+    border: 2px #fff solid;
     width: 895px;
-    border: 2px solid #fff;
     border-top: none;
     margin: 0 auto; }
     .services .content .headline {
@@ -106,7 +106,6 @@ header {
         flex-grow: 1;
         height: 2px; }
     .services .content .text {
-      border-top: none;
       width: 895px;
       height: 247px;
       padding: 60px;
@@ -117,10 +116,10 @@ header {
         line-height: 25.89px; }
 
 .whatwedo {
+  border: 2px #3c3c3c solid;
   width: 902px;
   height: 1196px;
   color: #3c3c3c;
-  border: 2px #3c3c3c solid;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -174,24 +173,21 @@ header {
 
 .ourworks .col-md-4 {
   height: 237px;
-  padding: 0; }
-  .ourworks .col-md-4 img {
-    padding: 0 10px 10px 0;
-    box-sizing: content-box; }
-  .ourworks .col-md-4 p {
-    font-size: 33.93px;
-    font-weight: 700;
-    transform: scaleY(1.002) translate(-15%, -120%);
-    text-transform: uppercase;
-    letter-spacing: 10px; }
+  padding: 0 10px 10px 0; }
+.ourworks p {
+  font-size: 33.93px;
+  font-weight: 700;
+  transform: scaleY(1.002) translate(-15%, -120%);
+  text-transform: uppercase;
+  letter-spacing: 10px; }
 .ourworks .row div:last-child {
   padding-right: 0; }
 
 .contactus {
+  border: 2px #3c3c3c solid;
   width: 899px;
   height: 297px;
-  color: #3c3c3c;
-  border: 2px #3c3c3c solid; }
+  color: #3c3c3c; }
   .contactus .up {
     position: relative;
     display: flex;
@@ -209,7 +205,7 @@ header {
     font-weight: 300;
     line-height: 25.89px; }
   .contactus .btn {
-    border: 2px #fff solid;
+    border: 2px #3c3c3c solid;
     background: #3c3c3c;
     width: 391px;
     height: 54px;

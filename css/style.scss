@@ -1,7 +1,9 @@
-$kolora:#3c3c3c;
-$kolorb:#fff;
+$colora:#3c3c3c;
+$colorb:#fff;
+@mixin border($colorborder){
+	border: 2px $colorborder solid;}
 body{
-	background: $kolorb;
+	background: $colorb;
 	width: 100vw;
 	height: 4685px;
 	font-family:Lato;
@@ -9,7 +11,7 @@ body{
 	justify-content: space-between;
   	align-items: center;
 	flex-direction:column;
-	color: $kolorb;
+	color: $colorb;
 }
 p{
 	margin:0;
@@ -49,19 +51,19 @@ header{
 .aboutus{
 	width: 902px;
 	height: 326px;
-	color:  $kolora;
+	color:  $colora;
 	h2{
 		font-size: 33.93px;
 		font-weight: 700;
 		transform: scaleY(1.002);
 		position:relative;
 		top:30px;
-		background: $kolorb;
+		background: $colorb;
 		display: inline-block;
 		width:500px;
 	}
 	div{
-		border: 2px $kolorb solid;
+		@include border($colora);
 		width: 898px;
 		height: 308px;
 		padding:60px;
@@ -83,8 +85,8 @@ header{
 	background:url("../images/services.jpg") center/cover no-repeat;
 	padding: 5% 0px;
 	.content{
+		@include border($colorb);
 		width: 895px;
-  		border: 2px solid $kolorb;
   		border-top: none;
   		margin:0 auto;
 	.headline{
@@ -108,19 +110,18 @@ header{
 		}
 		&::before{
 		content: "";
-  		background: $kolorb;
+  		background: $colorb;
   		flex-grow: 1;
   		height: 2px;
 			}
 		&::after{
 		content: "";
-  		background: $kolorb;
+  		background: $colorb;
   		flex-grow: 1;
   		height: 2px;
 			}
 	}
 	.text{
-		border-top:none;
 		width: 895px;
 		height: 247px;
 		padding:60px;
@@ -134,10 +135,10 @@ header{
 }
 }
 .whatwedo{
+	@include border($colora);
 	width: 902px;
 	height: 1196px;
-	color:$kolora;
-	border: 2px $kolora solid;
+	color:$colora;
 	text-align: center;
 	display:flex;
 	justify-content: space-around;
@@ -151,7 +152,7 @@ header{
 		bottom:70px;
 		display: inline-block;
 		width:419px;
-		background: $kolorb;
+		background: $colorb;
 	}
 	.design{
 		width: 541px;
@@ -205,9 +206,7 @@ header{
 .ourworks{
 	.col-md-4{
 		height:237px;
-		padding:0;
-		img{
-			padding:0 10px 10px 0;box-sizing: content-box;
+		padding:0 10px 10px 0;
 		}
 		p{
 			font-size: 33.93px;
@@ -216,16 +215,15 @@ header{
 			text-transform: uppercase;
 			letter-spacing: 10px;
 		}
-	}
 	.row div:last-child{
 		padding-right:0;
 	}
 }
 .contactus{
+	@include border($colora);
 	width: 899px;
 	height: 297px;
-	color:$kolora;
-	border: 2px $kolora solid;
+	color:$colora;
 	.up{
 		position:relative;
 		display:flex;
@@ -237,7 +235,7 @@ header{
 		font-size: 29.77px;
 		font-weight: 700;
 		transform: scaleY(1.0078) translate(0,-110%);
-		background: $kolorb;
+		background: $colorb;
 		width:50%;
 	}
 	p{
@@ -246,8 +244,8 @@ header{
 		line-height: 25.89px;
 	}
 	.btn{
-		border: 2px $kolorb solid;
-		background:  $kolora;
+		@include border($colora);
+		background:  $colora;
 		width: 391px;
 		height: 54px;
 		margin-top:20px;
@@ -259,7 +257,7 @@ header{
 	}
 }
 footer{
-	color:$kolora;
+	color:$colora;
 	p{
 		display:inline-block;
 	}
