@@ -1,5 +1,5 @@
 body {
-  background-color: #ffffff;
+  background: #fff;
   width: 100vw;
   height: 4685px;
   font-family: Lato;
@@ -44,7 +44,7 @@ header {
 .aboutus {
   width: 902px;
   height: 326px;
-  color: #111; }
+  color: #3c3c3c; }
   .aboutus h2 {
     font-size: 33.93px;
     font-weight: 700;
@@ -55,9 +55,7 @@ header {
     display: inline-block;
     width: 500px; }
   .aboutus div {
-    border-width: 2px;
-    border-color: #3c3c3c;
-    border-style: solid;
+    border: 2px #fff solid;
     width: 898px;
     height: 308px;
     padding: 60px; }
@@ -122,9 +120,7 @@ header {
   width: 902px;
   height: 1196px;
   color: #3c3c3c;
-  border-width: 2px;
-  border-color: #3c3c3c;
-  border-style: solid;
+  border: 2px #3c3c3c solid;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -178,23 +174,26 @@ header {
 
 .ourworks .col-md-4 {
   height: 237px;
-  padding: 0 10px 10px 0; }
+  padding: 0; }
+  .ourworks .col-md-4 img {
+    padding: 0 10px 10px 0;
+    box-sizing: content-box; }
   .ourworks .col-md-4 p {
-    position: relative;
-    bottom: 30px; }
+    font-size: 33.93px;
+    font-weight: 700;
+    transform: scaleY(1.002) translate(-15%, -120%);
+    text-transform: uppercase;
+    letter-spacing: 10px; }
 .ourworks .row div:last-child {
   padding-right: 0; }
 
 .contactus {
   width: 899px;
   height: 297px;
-  color: #000;
-  border-width: 2px;
-  border-color: #3c3c3c;
-  border-style: solid; }
+  color: #3c3c3c;
+  border: 2px #3c3c3c solid; }
   .contactus .up {
     position: relative;
-    bottom: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -202,68 +201,27 @@ header {
   .contactus h2 {
     font-size: 29.77px;
     font-weight: 700;
-    transform: scaleY(1.0078); }
+    transform: scaleY(1.0078) translate(0, -110%);
+    background: #fff;
+    width: 50%; }
   .contactus p {
     font-size: 16px;
     font-weight: 300;
     line-height: 25.89px; }
   .contactus .btn {
-    border-width: 2px;
-    border-color: #3c3c3c;
-    border-style: solid;
-    background-color: #3c3c3c;
+    border: 2px #fff solid;
+    background: #3c3c3c;
     width: 391px;
-    height: 54px; }
+    height: 54px;
+    margin-top: 20px; }
   .contactus .btn a {
     font-size: 15.87px;
     font-weight: 400;
     transform: scaleY(1.0078); }
 
 footer {
-  color: #000; }
+  color: #3c3c3c; }
   footer p {
     display: inline-block; }
-
-.sservices {
-  width: 100%;
-  height: 488px;
-  color: #fff;
-  background: url("../images/services.jpg") center/cover no-repeat; }
-  .sservices .scontent {
-    width: 500px;
-    padding: 0 0px 40px 0px;
-    margin: 50px auto;
-    border: 2px solid #fff;
-    border-top: none; }
-    .sservices .scontent .content-headline {
-      position: relative;
-      transform: translate(0, -50%);
-      margin-left: -2px;
-      margin-right: -2px;
-      overflow: hidden;
-      display: flex;
-      align-items: center; }
-      .sservices .scontent .content-headline h2 {
-        position: relative;
-        margin: 0;
-        padding: 0;
-        font-size: 24px;
-        display: inline-block;
-        flex-grow: 0;
-        padding: 0 30px; }
-      .sservices .scontent .content-headline::before {
-        content: "";
-        background: #fff;
-        flex-grow: 1;
-        height: 2px; }
-      .sservices .scontent .content-headline::after {
-        content: "";
-        background: #fff;
-        flex-grow: 1;
-        height: 2px; }
-    .sservices .scontent .content-text {
-      padding: 0 40px;
-      width: 895px;
-      height: 247px; }
 
 /*# sourceMappingURL=style.css.map */
