@@ -2,11 +2,13 @@ $colora:#3c3c3c;
 $colorb:#fff;
 @mixin border($colorborder){
 	border: 2px $colorborder solid;}
+*{
+	font-family:Lato;
+}
 body{
 	background: $colorb;
-	width: 100vw;
+	width: 1920px;
 	height: 4685px;
-	font-family:Lato;
 	display:flex;
 	justify-content: space-between;
   	align-items: center;
@@ -211,9 +213,16 @@ header{
 		p{
 			font-size: 33.93px;
 			font-weight: 700;
-			transform: scaleY(1.002) translate(-15%,-120%);
+			transform: scaleY(1.002) translate(10%,-120%);
 			text-transform: uppercase;
 			letter-spacing: 10px;
+			display:block;
+			width:280px;
+			text-align:left;
+		}
+		img{
+			height: 100%;
+			width:100%;
 		}
 	.row div:last-child{
 		padding-right:0;
@@ -254,6 +263,7 @@ header{
 		font-size: 15.87px;
 		font-weight: 400;
 		transform: scaleY(1.0078);
+		color:#fff;
 	}
 }
 footer{
