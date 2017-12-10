@@ -7,7 +7,7 @@ $colorb:#fff;
 }
 body{
 	background: $colorb;
-	width: 1920px;
+	width: 100%;
 	height: 4685px;
 	display:flex;
 	justify-content: space-between;
@@ -51,7 +51,8 @@ header{
 	}
 }
 .aboutus{
-	width: 902px;
+	@include border($colora);
+	width: 47%;
 	height: 326px;
 	color:  $colora;
 	h2{
@@ -59,22 +60,21 @@ header{
 		font-weight: 700;
 		transform: scaleY(1.002);
 		position:relative;
-		top:30px;
+		bottom:30px;
+		margin:0;
 		background: $colorb;
 		display: inline-block;
-		width:500px;
+		width:50%;
 	}
 	div{
-		@include border($colora);
-		width: 898px;
 		height: 308px;
-		padding:60px;
+		padding:20px;	
 		p{
-			
 			font-size: 16px;
 			font-weight: 300;
 			line-height: 24px;
 			margin:0;
+
 		}
 		p:nth-of-type(2){
 			margin-bottom: 20px;
@@ -90,56 +90,57 @@ header{
 		@include border($colorb);
 		width: 895px;
   		border-top: none;
-  		margin:0 auto;
-	.headline{
-		position: relative;
-  		transform: translate(0, -50%);
-  		margin-left: -2px;
-  		margin-right: -2px;
-  		overflow: hidden;
-  		display: flex;
-  		align-items: center;
-		h2{
+  		margin:50px auto;
+		.headline{
+			position: relative;
+  			transform: translate(0, -50%);
+  			margin-left: -2px;
+  			margin-right: -2px;
+  			overflow: hidden;
+  			display: flex;
+  			align-items: center;
+			h2{
+				margin:0 auto;
+				font-size: 33.93px;
+				font-weight: 700;
+				transform: scaleY(1.002);
+				position:relative;
+				display: inline-block;
+				width:419px;
+				background: transparent;
+				flex-grow: 0;
+			}
+			&::before{
+				content: "";
+  				background: $colorb;
+  				flex-grow: 1;
+  				height: 2px;
+			}
+			&::after{
+				content: "";
+  				background: $colorb;
+  				flex-grow: 1;
+  				height: 2px;
+			}
+		}
+		.text{
+			width: 100%;
+			height: 247px;
+			padding:60px;
 			margin:0 auto;
-			font-size: 33.93px;
-			font-weight: 700;
-			transform: scaleY(1.002);
-			position:relative;
-			display: inline-block;
-			width:419px;
-			background: transparent;
-			flex-grow: 0;
-		}
-		&::before{
-		content: "";
-  		background: $colorb;
-  		flex-grow: 1;
-  		height: 2px;
+			p{
+				font-size: 16px;
+				font-weight: 300;
+				line-height: 25.89px;
 			}
-		&::after{
-		content: "";
-  		background: $colorb;
-  		flex-grow: 1;
-  		height: 2px;
-			}
-	}
-	.text{
-		width: 895px;
-		height: 247px;
-		padding:60px;
-		margin:0 auto;
-		p{
-			font-size: 16px;
-			font-weight: 300;
-			line-height: 25.89px;
 		}
 	}
-}
 }
 .whatwedo{
 	@include border($colora);
-	width: 902px;
+	width: 47%;
 	height: 1196px;
+	padding:10px;
 	color:$colora;
 	text-align: center;
 	display:flex;
@@ -151,16 +152,20 @@ header{
 		font-weight: 700;
 		transform: scaleY(1.002);
 		position:relative;
-		bottom:70px;
+		bottom:55px;
 		display: inline-block;
 		width:419px;
 		background: $colorb;
+		margin:0;
 	}
 	.design{
-		width: 541px;
+		width: 100%;
 		height: 286px;
+		position:relative;
+		bottom:55px;
+		margin-bottom: 30px;
 	 	img:first-child{
-			margin-bottom:41px;
+			margin-bottom:35px;
 		}
 		p{
 			font-size: 14px;
@@ -171,14 +176,16 @@ header{
 			font-size: 19.96px;
 			font-weight: 700;
 			transform: scaleY(1.002);
-			margin-bottom:37px;
+			margin-bottom:30px;
 		}
 	}
 	.development{
-		width: 895px;
+		width: 100%;
 		height: 336px;
+		position:relative;
+		bottom:55px;
 		img:first-child{
-			margin-bottom:38px;
+			margin-bottom:35px;
 		}
 		p{
 			font-size: 14px;
@@ -186,14 +193,16 @@ header{
 			line-height: 25.89px;
 		}
 		p:nth-of-type(1){
-			margin-bottom:43px;
+			margin-bottom:30px;
 		}
 	}
 	.productmanagement{
-		width: 895px;
+		width: 100%;
 		height: 261px;
+		position:relative;
+		bottom:55px;
 		img:first-child{
-			margin-bottom:45px;
+			margin-bottom:35px;
 		}
 		p{
 			font-size: 14px;
@@ -201,11 +210,12 @@ header{
 			line-height: 25.89px;
 		}
 		p:nth-of-type(1){
-			margin-bottom:47px;
+			margin-bottom:30px;
 		}
 	}
 }
 .ourworks{
+	width:100%;
 	.col-md-4{
 		height:237px;
 		padding:0 10px 10px 0;
@@ -230,7 +240,7 @@ header{
 }
 .contactus{
 	@include border($colora);
-	width: 899px;
+	width: 47%;
 	height: 297px;
 	color:$colora;
 	.up{
@@ -268,6 +278,7 @@ header{
 }
 footer{
 	color:$colora;
+	padding-bottom: 5px;
 	p{
 		display:inline-block;
 	}

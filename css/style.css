@@ -3,7 +3,7 @@
 
 body {
   background: #fff;
-  width: 1920px;
+  width: 100%;
   height: 4685px;
   display: flex;
   justify-content: space-between;
@@ -44,7 +44,8 @@ header {
     height: 37px; }
 
 .aboutus {
-  width: 902px;
+  border: 2px #3c3c3c solid;
+  width: 47%;
   height: 326px;
   color: #3c3c3c; }
   .aboutus h2 {
@@ -52,15 +53,14 @@ header {
     font-weight: 700;
     transform: scaleY(1.002);
     position: relative;
-    top: 30px;
+    bottom: 30px;
+    margin: 0;
     background: #fff;
     display: inline-block;
-    width: 500px; }
+    width: 50%; }
   .aboutus div {
-    border: 2px #3c3c3c solid;
-    width: 898px;
     height: 308px;
-    padding: 60px; }
+    padding: 20px; }
     .aboutus div p {
       font-size: 16px;
       font-weight: 300;
@@ -78,7 +78,7 @@ header {
     border: 2px #fff solid;
     width: 895px;
     border-top: none;
-    margin: 0 auto; }
+    margin: 50px auto; }
     .services .content .headline {
       position: relative;
       transform: translate(0, -50%);
@@ -108,7 +108,7 @@ header {
         flex-grow: 1;
         height: 2px; }
     .services .content .text {
-      width: 895px;
+      width: 100%;
       height: 247px;
       padding: 60px;
       margin: 0 auto; }
@@ -119,8 +119,9 @@ header {
 
 .whatwedo {
   border: 2px #3c3c3c solid;
-  width: 902px;
+  width: 47%;
   height: 1196px;
+  padding: 10px;
   color: #3c3c3c;
   text-align: center;
   display: flex;
@@ -132,15 +133,19 @@ header {
     font-weight: 700;
     transform: scaleY(1.002);
     position: relative;
-    bottom: 70px;
+    bottom: 55px;
     display: inline-block;
     width: 419px;
-    background: #fff; }
+    background: #fff;
+    margin: 0; }
   .whatwedo .design {
-    width: 541px;
-    height: 286px; }
+    width: 100%;
+    height: 286px;
+    position: relative;
+    bottom: 55px;
+    margin-bottom: 30px; }
     .whatwedo .design img:first-child {
-      margin-bottom: 41px; }
+      margin-bottom: 35px; }
     .whatwedo .design p {
       font-size: 14px;
       font-weight: 300;
@@ -149,51 +154,57 @@ header {
       font-size: 19.96px;
       font-weight: 700;
       transform: scaleY(1.002);
-      margin-bottom: 37px; }
+      margin-bottom: 30px; }
   .whatwedo .development {
-    width: 895px;
-    height: 336px; }
+    width: 100%;
+    height: 336px;
+    position: relative;
+    bottom: 55px; }
     .whatwedo .development img:first-child {
-      margin-bottom: 38px; }
+      margin-bottom: 35px; }
     .whatwedo .development p {
       font-size: 14px;
       font-weight: 300;
       line-height: 25.89px; }
     .whatwedo .development p:nth-of-type(1) {
-      margin-bottom: 43px; }
+      margin-bottom: 30px; }
   .whatwedo .productmanagement {
-    width: 895px;
-    height: 261px; }
+    width: 100%;
+    height: 261px;
+    position: relative;
+    bottom: 55px; }
     .whatwedo .productmanagement img:first-child {
-      margin-bottom: 45px; }
+      margin-bottom: 35px; }
     .whatwedo .productmanagement p {
       font-size: 14px;
       font-weight: 300;
       line-height: 25.89px; }
     .whatwedo .productmanagement p:nth-of-type(1) {
-      margin-bottom: 47px; }
+      margin-bottom: 30px; }
 
-.ourworks .col-md-4 {
-  height: 237px;
-  padding: 0 10px 10px 0; }
-.ourworks p {
-  font-size: 33.93px;
-  font-weight: 700;
-  transform: scaleY(1.002) translate(10%, -120%);
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  display: block;
-  width: 280px;
-  text-align: left; }
-.ourworks img {
-  height: 100%;
+.ourworks {
   width: 100%; }
-.ourworks .row div:last-child {
-  padding-right: 0; }
+  .ourworks .col-md-4 {
+    height: 237px;
+    padding: 0 10px 10px 0; }
+  .ourworks p {
+    font-size: 33.93px;
+    font-weight: 700;
+    transform: scaleY(1.002) translate(10%, -120%);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    display: block;
+    width: 280px;
+    text-align: left; }
+  .ourworks img {
+    height: 100%;
+    width: 100%; }
+  .ourworks .row div:last-child {
+    padding-right: 0; }
 
 .contactus {
   border: 2px #3c3c3c solid;
-  width: 899px;
+  width: 47%;
   height: 297px;
   color: #3c3c3c; }
   .contactus .up {
@@ -225,7 +236,8 @@ header {
     color: #fff; }
 
 footer {
-  color: #3c3c3c; }
+  color: #3c3c3c;
+  padding-bottom: 5px; }
   footer p {
     display: inline-block; }
 
