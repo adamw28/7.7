@@ -53,7 +53,7 @@ header {
     font-weight: 700;
     transform: scaleY(1.002);
     position: relative;
-    bottom: 30px;
+    bottom: 17px;
     margin: 0;
     background: #fff;
     display: inline-block;
@@ -76,7 +76,7 @@ header {
   padding: 5% 0px; }
   .services .content {
     border: 2px #fff solid;
-    width: 895px;
+    width: 60%;
     border-top: none;
     margin: 50px auto; }
     .services .content .headline {
@@ -94,7 +94,7 @@ header {
         transform: scaleY(1.002);
         position: relative;
         display: inline-block;
-        width: 419px;
+        width: 30%;
         background: transparent;
         flex-grow: 0; }
       .services .content .headline::before {
@@ -240,5 +240,15 @@ footer {
   padding-bottom: 5px; }
   footer p {
     display: inline-block; }
+
+@media (max-width: 768px) {
+  .aboutus {
+    height: 340px; }
+
+  .services .content .headline {
+    transform: translate(0, -100%); }
+  .services .content .text {
+    height: 267px;
+    padding: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

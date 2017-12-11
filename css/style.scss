@@ -60,7 +60,7 @@ header{
 		font-weight: 700;
 		transform: scaleY(1.002);
 		position:relative;
-		bottom:30px;
+		bottom:17px;
 		margin:0;
 		background: $colorb;
 		display: inline-block;
@@ -88,7 +88,7 @@ header{
 	padding: 5% 0px;
 	.content{
 		@include border($colorb);
-		width: 895px;
+		width: 60%;
   		border-top: none;
   		margin:50px auto;
 		.headline{
@@ -106,7 +106,7 @@ header{
 				transform: scaleY(1.002);
 				position:relative;
 				display: inline-block;
-				width:419px;
+				width:30%;
 				background: transparent;
 				flex-grow: 0;
 			}
@@ -281,5 +281,21 @@ footer{
 	padding-bottom: 5px;
 	p{
 		display:inline-block;
+	}
+}
+@media(max-width:768px){
+	.aboutus{
+		height:340px;
+	}
+	.services {
+  		.content{ 
+	 		.headline{
+    			transform: translate(0, -100%);
+    			}
+    		.text {
+      			height: 267px;
+				padding:40px;
+ 			}
+	  	}
 	}
 }
