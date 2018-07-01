@@ -4,7 +4,6 @@
 body {
   background: #fff;
   width: 100%;
-  height: 4685px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +22,8 @@ header {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 1072px;
+  margin-bottom: 20px;
+  padding: 10px;
   background: url("../images/header.jpg") center/cover no-repeat; }
   header .ellipse {
     width: 65px;
@@ -41,25 +41,23 @@ header {
     text-align: center; }
   header .shape {
     width: 23px;
-    height: 37px; }
+    height: 37px;
+    margin: 10px; }
 
 .aboutus {
   border: 2px #3c3c3c solid;
   width: 47%;
-  height: 326px;
-  color: #3c3c3c; }
+  color: #3c3c3c;
+  margin: 20px 0; }
   .aboutus h2 {
     font-size: 33.93px;
     font-weight: 700;
     transform: scaleY(1.002);
-    position: relative;
-    bottom: 17px;
+    transform: translate(0, -50%);
     margin: 0;
     background: #fff;
-    display: inline-block;
-    width: 50%; }
+    display: inline-block; }
   .aboutus div {
-    height: 308px;
     padding: 20px; }
     .aboutus div p {
       font-size: 16px;
@@ -71,9 +69,9 @@ header {
 
 .services {
   width: 100%;
-  height: 488px;
   background: url("../images/services.jpg") center/cover no-repeat;
-  padding: 5% 0px; }
+  padding: 5% 0px;
+  margin: 20px 0 30px 0; }
   .services .content {
     border: 2px #fff solid;
     width: 60%;
@@ -94,7 +92,6 @@ header {
         transform: scaleY(1.002);
         position: relative;
         display: inline-block;
-        width: 30%;
         background: transparent;
         flex-grow: 0; }
       .services .content .headline::before {
@@ -109,8 +106,7 @@ header {
         height: 2px; }
     .services .content .text {
       width: 100%;
-      height: 247px;
-      padding: 60px;
+      padding: 0 40px 40px;
       margin: 0 auto; }
       .services .content .text p {
         font-size: 16px;
@@ -120,10 +116,9 @@ header {
 .whatwedo {
   border: 2px #3c3c3c solid;
   width: 47%;
-  height: 1196px;
   padding: 10px;
   color: #3c3c3c;
-  text-align: center;
+  margin: 30px 0 20px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -131,19 +126,15 @@ header {
   .whatwedo h2 {
     font-size: 33.93px;
     font-weight: 700;
-    transform: scaleY(1.002);
-    position: relative;
-    bottom: 55px;
+    transform: scaleY(1.002) translate(0, -70%);
     display: inline-block;
-    width: 419px;
     background: #fff;
     margin: 0; }
   .whatwedo .design {
     width: 100%;
-    height: 286px;
     position: relative;
     bottom: 55px;
-    margin-bottom: 30px; }
+    margin: 30px 0; }
     .whatwedo .design img:first-child {
       margin-bottom: 35px; }
     .whatwedo .design p {
@@ -157,9 +148,9 @@ header {
       margin-bottom: 30px; }
   .whatwedo .development {
     width: 100%;
-    height: 336px;
     position: relative;
-    bottom: 55px; }
+    bottom: 55px;
+    margin-bottom: 30px; }
     .whatwedo .development img:first-child {
       margin-bottom: 35px; }
     .whatwedo .development p {
@@ -170,7 +161,6 @@ header {
       margin-bottom: 30px; }
   .whatwedo .productmanagement {
     width: 100%;
-    height: 261px;
     position: relative;
     bottom: 55px; }
     .whatwedo .productmanagement img:first-child {
@@ -183,7 +173,8 @@ header {
       margin-bottom: 30px; }
 
 .ourworks {
-  width: 100%; }
+  width: 100%;
+  margin: 20px 0; }
   .ourworks .col-md-4 {
     height: 237px;
     padding: 0 10px 10px 0; }
@@ -193,8 +184,7 @@ header {
     transform: scaleY(1.002) translate(10%, -120%);
     text-transform: uppercase;
     letter-spacing: 10px;
-    display: block;
-    width: 280px;
+    display: inline-block;
     text-align: left; }
   .ourworks img {
     height: 100%;
@@ -205,10 +195,10 @@ header {
 .contactus {
   border: 2px #3c3c3c solid;
   width: 47%;
-  height: 297px;
+  margin: 20px 0;
   color: #3c3c3c; }
   .contactus .up {
-    position: relative;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -216,9 +206,9 @@ header {
   .contactus h2 {
     font-size: 29.77px;
     font-weight: 700;
-    transform: scaleY(1.0078) translate(0, -110%);
+    transform: scaleY(1.0078) translate(0, -70%);
     background: #fff;
-    width: 50%; }
+    margin: 0; }
   .contactus p {
     font-size: 16px;
     font-weight: 300;
@@ -226,9 +216,7 @@ header {
   .contactus .btn {
     border: 2px #3c3c3c solid;
     background: #3c3c3c;
-    width: 391px;
-    height: 54px;
-    margin-top: 20px; }
+    margin: 20px 0; }
   .contactus .btn a {
     font-size: 15.87px;
     font-weight: 400;
@@ -237,18 +225,35 @@ header {
 
 footer {
   color: #3c3c3c;
-  padding-bottom: 5px; }
+  margin: 20px 0; }
   footer p {
     display: inline-block; }
 
-@media (max-width: 768px) {
-  .aboutus {
-    height: 340px; }
+@media (max-width: 970px) {
+  .ourworks .col-md-4 p {
+    font-size: 20px; } }
+@media (max-width: 767px) {
+  header h1, header p {
+    font-size: initial; }
 
-  .services .content .headline {
-    transform: translate(0, -100%); }
-  .services .content .text {
-    height: 267px;
-    padding: 40px; } }
+  .aboutus h2 {
+    font-size: initial; }
+
+  .services .content .headline h2 {
+    font-size: initial; }
+
+  .whatwedo h2 {
+    font-size: initial;
+    transform: translate(0, -100%);
+    margin: 0 0 10px 0; }
+
+  .ourworks .col-md-4 {
+    padding: 0 0 5px 0; }
+    .ourworks .col-md-4 p {
+      font-size: 20px; }
+
+  .contactus h2 {
+    font-size: 18px;
+    transform: translate(0, -100%); } }
 
 /*# sourceMappingURL=style.css.map */
